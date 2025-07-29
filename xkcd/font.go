@@ -1,4 +1,4 @@
-// xkcd contains the XKCD script font created from a samnple of Randall Munroe's handwriting.
+// xkcd contains the XKCD script font created from a sample of Randall Munroe's handwriting.
 package xkcd
 
 import (
