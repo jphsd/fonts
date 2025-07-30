@@ -19,9 +19,9 @@ type fi struct {
 
 var (
 	Fonts = []fi{
-		{"alexbrush", alexbrush.AlexBrushOTF},
-		{"cianan", cianan.CiananTTF},
-		{"xkcd", xkcd.XkcdTTF},
+		{"alexbrush", alexbrush.OTF},
+		{"cianan", cianan.TTF},
+		{"xkcd", xkcd.TTF},
 	}
 )
 

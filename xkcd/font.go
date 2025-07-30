@@ -7,4 +7,4 @@ import (
 )
 
 //go:embed xkcd-script.ttf
-var XkcdTTF []byte
+var TTF []byte

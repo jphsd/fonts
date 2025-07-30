@@ -7,4 +7,4 @@ import (
 )
 
 //go:embed alexbrush.otf
-var AlexBrushOTF []byte
+var OTF []byte

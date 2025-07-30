@@ -7,4 +7,4 @@ import (
 )
 
 //go:embed cianan.ttf
-var CiananTTF []byte
+var TTF []byte
