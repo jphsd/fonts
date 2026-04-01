@@ -31,7 +31,6 @@ func main() {
 
 	for _, f := range Fonts {
 		width, height := 1000, 250
-		img := image.NewRGBA(width, height, color.White)
 
 		ttf, err := sfnt.Parse(f.data)
 		if err != nil {
@@ -51,9 +50,9 @@ func main() {
 		xfm = g2d.Translate(float64(-bounds.Min.X), float64(height/2))
 		s = s.Transform(xfm)
 
-		g2d.FillShape(img, s, g2d.BlackPen)
-
-		// Capture image output
+		// Render into an image
+		img := image.NewRGBA(width, height, color.White)
+		g2d.RenderColoredShape(img, s, color.Black)
 		image.SaveImage(img, f.name)
 	}
 }
